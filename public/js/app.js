@@ -2,10 +2,12 @@ console.log('Client side javascript')
 
 const weather =  document.querySelector('form')
 const search = document.querySelector('input')
-const msgone = document.querySelector('#msgone')
+const Msgone = document.querySelector('#msgone')
+const msgtwo = document.querySelector('#msgtwo')
 
 weather.addEventListener('submit',(e)=>{
     e.preventDefault()
+    msgone.textContent = 'Searching...'
     const location = search.value
     
     
