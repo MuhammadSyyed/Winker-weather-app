@@ -2,6 +2,7 @@ const path = require('path')
 const express = require('express')
 const hbs = require('hbs')
 const app = express()
+const port = process.env.PORT || 3000
 const geocode = require('./utils/geocode')
 const forcast = require('./utils/forcast')
 
@@ -23,7 +24,7 @@ hbs.registerPartials(partials)
 
 app.get('',(req, res)=>{
     res.render('index',{
-        title: 'Weather',
+        title: 'Winker',
         name: 'Muhammad Syed',
         background: '/image/main.jpg'
     })
@@ -113,8 +114,8 @@ app.get('*',(req,res)=>{
 })
 
 
-app.listen(3000,()=>{
-    console.log('Server is up on port 3000')
+app.listen(port,()=>{
+    console.log('Server is up on port ' + port)
 })
 
 console.log('Done')

@@ -6,22 +6,23 @@
     
     <link rel="icon" href="/image/ico.png">
     <title>
-        Weather
+        Winker | Home
     </title>
 </head>
 <body>
    <div class='main-content'>
     {{>header}}
     {{!-- <col><img class='icon' src="/image/ico.png"></col> --}}
-    
+    <div class="card">
     <form>
         <input placeholder="Enter the city name to search weather">
         <button>Search</button>
     </form>
     
     <p style="padding-left: 16px;"> Powered by : OpenWeather.co</p>
-    <p id='msgone' class="msgone"></p>
-    <p id='msgtwo' class='msgtwo'></p>
+    <p  id='msgone' class="msgone"></p>
+    <p  id='msgtwo' class='msgtwo'></p>
+    </div>
     </div>
     {{>footer}}
     <script src='/js/app.js'></script>
