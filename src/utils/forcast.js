@@ -1,4 +1,5 @@
 const request = require('request')
+const os = require('os')
 
 const forcast = (lat,long,callback)=>{
 
@@ -13,8 +14,9 @@ else if (response.body.cod === '400'){
     callback('There is something wrong with coordinates. Please Check !',undefined)
 }else{
     const forcaast = response.body
-    callback(undefined,  forcaast.weather[0].description +', It is currently '+ (forcaast.main.temp) +' degrees out there and '+forcaast.clouds.all+' % clouds.')
+    callback(undefined,' It is currently '+forcaast.main.temp+' •C out there, feels like '+forcaast.main.feels_like+' •C with '+forcaast.weather[0].description+'.')
         }
     })
 }
 module.exports = forcast
+
