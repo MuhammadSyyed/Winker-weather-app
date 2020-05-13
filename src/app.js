@@ -25,7 +25,7 @@ hbs.registerPartials(partials)
 app.get('',(req, res)=>{
     res.render('index',{
         title: 'Winker',
-        name: 'Muhammad Syed',
+        version: 'V 1.0.2',
         background: '/image/main.jpg'
     })
 })
@@ -33,7 +33,7 @@ app.get('',(req, res)=>{
 app.get('/about',(req,res)=>{
     res.render('about',{
         title:'About me',
-        name:'Muhammad Syed',
+        version: 'V 1.0.2',
         background: '/image/main.jpg'
     })
 })
@@ -42,7 +42,7 @@ app.get('/help',(req,res)=>{
     res.render('help',{
         help: 'Helping text',
         title:'Help',
-        name:'Muhammad Syed',
+        version: 'V 1.0.2',
         background: '/image/main.jpg'
 
     })
@@ -77,27 +77,13 @@ app.get('/weather',(req,res)=>{
 
 })
 
-// app.get('/products',(req,res)=>{
-// 
-    // if(!req.query.search){
-        // return res.send({
-            // error:'You must provide as search term'
-        // })
-    // }
-    // console.log(req.query.search)
-    // res.send({
-        // product: []
-    // })
-// 
-// })
-// 
 
 app.get('/help/*',(req,res)=>{
 
     res.render('error',{
         title: '404 Error',
         text:'Help Article Not Found',
-        name: 'Muhammad Syed',
+        version: 'V 1.0.2',
         background: '/image/main.jpg'
     })
 
