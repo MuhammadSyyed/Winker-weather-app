@@ -1,5 +1,5 @@
 body {
-    color :#97dbac;
+    color :#8bcdec;
     font-family: Georgia, 'Times New Roman', Times, serif;
     max-width: 700px;
     margin: 0 auto;
@@ -16,8 +16,8 @@ body {
 
 footer {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #c59a81;
-    border-top: 0.1px solid #c59a81;
+    color: #8bcdec;
+    border-top: 0.1px solid #8bcdec;
     margin-top: 16px;
     padding: 16px 0px;
 }
@@ -37,37 +37,37 @@ footer {
       }
 
 header {
-    color :#97dbac;
+    color :#8bcdec;
     margin-top: 90px;
     margin-bottom: 48px;
 }
 
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color :#97dbac;
+    color :#8bcdec;
     font-size: 80px;
     margin-bottom: 16px;
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: rgb(202, 157, 157);
+    color: rgb(179, 155, 247);
   }
 
 header a {
 
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color :#97dbac;
+    color :#8bcdec;
     margin-right: auto;
     text-decoration: none ;
     border-radius: 10px;
     background-color: transparent;
-    border: 0.01px solid #e0c5a9;
+    border: 0.01px solid#8bcdec;
     position: center;
     padding: 10px 30px;
 
 }
 header a:hover{
-    background-color: #e6d6cd;
-    color: #6d503f ;
+    background-color: #8bcdec;
+    color: #4a60c5 ;
 }
 
 .portrait {
@@ -84,11 +84,11 @@ header a:hover{
 
 input {
     width: 473px;
-    border: 0.5px solid #cccccc;
+    border: 0.5px solid #8bcdec;
     border-radius: 10px;
     padding: 10px 30px;
     background: transparent;
-    color: white;
+    color: #8bcdec;
     margin-right: 6px;
 
 }
@@ -96,29 +96,29 @@ input {
 button {
     cursor: pointer;
     font-family: Arial, Helvetica, sans-serif;
-    border: 0.7px solid #885c43;
-    background:#885c43 ;
-    color:#d6bfb2;
+    border: 0.7px solid #8bcdec;
+    background:#8bcdec ;
+    color:#064764;
     padding: 10px 30px;
     border-radius: 10px;
 
 }
 
 button:hover{
-    background-color: #e6d6cd;
-    color:#6d503f ;
+    background-color: #01415f;
+    color:#8bcdec ;
 
 }
 
 .msgone {
 
-    color: #dda07d;
+    color: #27a3dd;
     font-size: 35px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
 .msgtwo{
-    color: #d1af9c;
+    color: #8bcdec;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 25px;
     
